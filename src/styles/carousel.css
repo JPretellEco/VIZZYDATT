@@ -1,0 +1,85 @@
+/* Carousel Custom Styling - Corporate */
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-track {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
+.slick-slide {
+  display: flex !important;
+  height: auto;
+  min-height: 1px;
+}
+
+.slick-slide > div {
+  width: 100%;
+}
+
+/* Dots */
+.slick-dots {
+  position: relative;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 32px;
+  padding: 0;
+  list-style: none;
+}
+
+.slick-dots li {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: #2C5364;
+  opacity: 0.3;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.slick-dots li button:hover {
+  opacity: 0.6;
+}
+
+.slick-dots li.slick-active button {
+  opacity: 1;
+  width: 24px;
+  border-radius: 5px;
+}
+
+/* Remove default arrows */
+.slick-prev,
+.slick-next {
+  display: none !important;
+}

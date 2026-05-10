@@ -1,0 +1,157 @@
+:root {
+  --font-size: 16px;
+
+  /* Corporate Color Palette - Enterprise B2B */
+  --background: #FFFFFF;
+  --foreground: #1A202C;
+
+  /* Primary - Azul petróleo corporativo */
+  --primary: #2C5364;
+  --primary-foreground: #FFFFFF;
+  --primary-hover: #3E5C76;
+
+  /* Secondary - Gris corporativo */
+  --secondary: #4A5568;
+  --secondary-foreground: #FFFFFF;
+
+  /* Neutral grays */
+  --muted: #F7FAFC;
+  --muted-foreground: #718096;
+  --accent: #E2E8F0;
+  --accent-foreground: #2C5364;
+
+  /* UI Elements */
+  --card: #FFFFFF;
+  --card-foreground: #1A202C;
+  --popover: #FFFFFF;
+  --popover-foreground: #1A202C;
+
+  /* Interactive */
+  --border: #E2E8F0;
+  --input: #E2E8F0;
+  --input-background: #F7FAFC;
+  --ring: #2C5364;
+
+  /* Status colors - subtle */
+  --destructive: #C53030;
+  --destructive-foreground: #FFFFFF;
+  --success: #2F855A;
+  --success-foreground: #FFFFFF;
+  --info: #2B6CB0;
+  --info-foreground: #FFFFFF;
+
+  /* Charts - corporate palette */
+  --chart-1: #2C5364;
+  --chart-2: #3E5C76;
+  --chart-3: #4A5568;
+  --chart-4: #2B6CB0;
+  --chart-5: #2F855A;
+
+  /* Border radius - minimal corporate */
+  --radius: 0.25rem;
+
+  /* Typography */
+  --font-weight-semibold: 600;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+}
+
+/* Dark mode removed for corporate enterprise focus */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-hover: var(--primary-hover);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: 2px;
+  --radius-md: var(--radius);
+  --radius-lg: 6px;
+  --radius-xl: 8px;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /**
+  * Default typography styles for HTML elements (h1-h4, p, label, button, input).
+  * These are in @layer base, so Tailwind utility classes (like text-sm, text-lg) automatically override them.
+  */
+
+  html {
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+  }
+
+  h1 {
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.4;
+  }
+
+  h4 {
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  label {
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  button {
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  input {
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+  }
+}
