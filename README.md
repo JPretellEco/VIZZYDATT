@@ -1,4 +1,4 @@
-# TechConsult - Sitio Web Corporativo
+# VIZYDATT- Sitio Web Corporativo
 
 Sitio web profesional para empresa de consultoría tecnológica y capacitación empresarial.
 
